@@ -4,8 +4,12 @@ import education2 from "../../../public/logounjani.jpeg";
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+type EducationItemType = {
+  [key: string]: any;
+};
+
 type EducationType = {
-  education: Array<unknown>;
+  education: Array<EducationItemType>;
 };
 
 const typedData = data as EducationType;
