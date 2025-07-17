@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Entrance animation: fade in and slide up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+/* Fade in with delay */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  opacity: 0;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.9s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.6s;
+}
+
+/* Highlight background animation */
+@keyframes highlightBg {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.highlight-animate {
+  background-image: linear-gradient(120deg, #d9f99d 0%, #bef264 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 0 100%;
+  transition: background-size 0.5s ease;
+  animation: highlightBg 1s forwards;
+}
