@@ -3,16 +3,21 @@ import education1 from "../../../public/logosmkn1cimahi.png";
 import education2 from "../../../public/logounjani.jpeg";
 
 import type { NextApiRequest, NextApiResponse } from 'next';
+import type { StaticImageData } from "next/image";
 
 type EducationItemType = {
-  [key: string]: any;
+  id: number;
+  educationName: string;
+  status: string;
+  date: string;
+  image?: StaticImageData;
 };
 
 type EducationType = {
-  education: Array<EducationItemType>;
+  education: Array<Omit<EducationItemType, 'image'>>;
 };
 
-const typedData = data as EducationType;
+const typedData = data as unknown as EducationType;
 
 export const education = typedData.education.map((edu, index) => ({
   ...edu,
