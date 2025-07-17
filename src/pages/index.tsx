@@ -11,6 +11,9 @@ export default function Home() {
     <>
       <Head>
         <title>Biels Gallery</title>
+          <meta name="description" content="Personal website & gallery by Bielss Nabil" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta property="og:image" content="/preview.jpg" />
       </Head>
       <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-gray-200 font-sans">
         <div>
