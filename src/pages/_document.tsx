@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Biel's Gallery</title>
         <link rel="icon" href="/profile.jpeg" />
       </Head>
       <body className="antialiased">

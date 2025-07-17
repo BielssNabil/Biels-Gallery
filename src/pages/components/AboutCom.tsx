@@ -24,21 +24,21 @@ const AboutCom = () => {
           isInView ? "animate-fade-slide-up" : ""
         }`}
       >
-        Hi! I'm Nabil Satya Pramana, a student with a unique background in Software Engineering and currently studying Government Science at Jenderal Achmad Yani University. Although my academic journey began in technology, I've always believed that real change happens when digital innovation meets public services.
+        Hi! I&apos;am Nabil Satya Pramana, a student with a unique background in Software Engineering and currently studying Government Science at Jenderal Achmad Yani University. Although my academic journey began in technology, I&apos;ve always believed that real change happens when digital innovation meets public services.
       </p>
       <p
         className={`text-gray-300 mb-3 text-justify indent-7 ${
           isInView ? "animate-fade-slide-up" : ""
         }`}
       >
-        I'm passionate about exploring how technology can support better governance, empower communities, and create more inclusive policies. Shifting from programming to studying society has given me a broader perspective on how digital and social systems work together.
+        I&apos;m passionate about exploring how technology can support better governance, empower communities, and create more inclusive policies. Shifting from programming to studying society has given me a broader perspective on how digital and social systems work together.
       </p>
       <p
         className={`text-gray-300 mb-3 text-justify indent-7 ${
           isInView ? "animate-fade-slide-up" : ""
         }`}
       >
-        Outside of academia, I enjoy running and being part of the local community in Bandung. These are ways I stay active, meet new people, and maintain a balanced lifestyle. Currently, I'm on a mission to learn, grow, and contribute in any way I can, one step at a time.
+        Outside of academia, I enjoy running and being part of the local community in Bandung. These are ways I stay active, meet new people, and maintain a balanced lifestyle. Currently, I&apos;m on a mission to learn, grow, and contribute in any way I can, one step at a time.
       </p>
     </section>
   );

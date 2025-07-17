@@ -20,7 +20,7 @@ const Intro = () => {
               </h1>
             </div>
             <h1 className="font-bold font-serif text-6xl bg-clip-text text-lime-400">
-              BIEL'S GALLERY
+              BIELS GALLERY
             </h1>
 
             <h3 className="text-2xl text-gray-900 font-semibold">

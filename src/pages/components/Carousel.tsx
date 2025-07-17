@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface CarouselProps {
   images: { src: string; alt: string }[];
@@ -49,9 +50,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
               (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
             }}
           >
-            <img
+            <Image
               src={images[currentIndex % 10].src}
               alt={images[currentIndex % 10].alt}
+              width={500}
+              height={300}
               className="w-full h-full object-contain rounded-lg"
             />
           </div>
@@ -83,9 +86,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                     (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
                   }}
                 >
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
+                    width={500}
+                    height={300}
                     className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
@@ -114,9 +119,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                   (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
                 }}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  width={500}
+                  height={300}
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
@@ -141,9 +148,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
             >
               &#10005;
             </button>
-            <img
+            <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
+              width={500}
+              height={300}
               className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-lg"
               style={{ touchAction: "none" }}
               onWheel={(e) => {

@@ -2,8 +2,10 @@ import data from "./data.json";
 import education1 from "../../../public/logosmkn1cimahi.png";
 import education2 from "../../../public/logounjani.jpeg";
 
+import type { NextApiRequest, NextApiResponse } from 'next';
+
 type EducationType = {
-  education: Array<any>;
+  education: Array<unknown>;
 };
 
 const typedData = data as EducationType;
