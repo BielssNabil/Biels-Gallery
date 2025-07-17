@@ -2,7 +2,7 @@ const FooterCom: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 py-6 mt-auto">
       <div className="max-w-7xl mx-auto px-5 flex flex-col items-center">
-        <p>© 2025 Biel's Gallery. All rights reserved.</p>
+        <p>© 2025 Biel&apos;s Gallery. All rights reserved.</p>
         <p className="mt-2 text-sm">Made by Nabil Satya Pramana</p>
         <div className="mt-4 flex space-x-6">
           <a href="https://www.instagram.com/satyanabil461?igsh=Mjl6enozb3gyZTF0" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400" aria-label="Instagram">
