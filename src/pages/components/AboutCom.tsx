@@ -24,7 +24,7 @@ const AboutCom = () => {
           isInView ? "animate-fade-slide-up" : ""
         }`}
       >
-        Hi! I&apos;am Nabil Satya Pramana, a student with a unique background in Software Engineering and currently studying Government Science at Jenderal Achmad Yani University. Although my academic journey began in technology, I&apos;ve always believed that real change happens when digital innovation meets public services.
+        Hi! I&apos;am Nabil Satya Pramana, a student with a unique background in Software Engineering and currently studying Government Science at Universitas Jenderal Achmad Yani. Although my academic journey began in technology, I&apos;ve always believed that real change happens when digital innovation meets public services.
       </p>
       <p
         className={`text-gray-300 mb-3 text-justify indent-7 ${
