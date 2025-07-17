@@ -50,6 +50,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
               (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
             }}
           >
+          {images?.[currentIndex % 10] && (
             <Image
               src={images[currentIndex % 10].src}
               alt={images[currentIndex % 10].alt}
@@ -57,6 +58,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
               height={300}
               className="w-full h-full object-contain rounded-lg"
             />
+          )}
           </div>
           <button
             onClick={nextSlide}
@@ -69,66 +71,66 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         <div
           className="mt-4 flex justify-center space-x-4"
         >
-          {images.length > 10 ? (
-            <>
-              {images.slice(0, 10).map((image, index) => (
-                <div
-                  key={index}
-                  className={`w-12 h-12 rounded-lg cursor-pointer border-2 ${
-                    index === currentIndex ? "border-lime-400" : "border-transparent"
-                  }`}
-                  onClick={() => setCurrentIndex(index)}
-                  style={{ transition: "transform 0.3s ease" }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLDivElement).style.transform = "scale(1.1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
-                  }}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={500}
-                    height={300}
-                    className="w-full h-full object-contain rounded-lg"
-                  />
-                </div>
-              ))}
-              <div
-                key="more"
-                className="w-auto h-12 px4 rounded-lg cursor-pointer border-2 border-transparent flex items-center justify-center bg-gray-800 text-lime-400 font-bold text-sm hover:bg-gray-700 transition"
-                onClick={() => window.location.href = "/gallery"}
-              >
-                See All
-              </div>
-            </>
-          ) : (
-            images.map((image, index) => (
-              <div
-                key={index}
-                className={`w-12 h-12 rounded-lg cursor-pointer border-2 ${
-                  index === currentIndex ? "border-lime-400" : "border-transparent"
-                }`}
-                onClick={() => setCurrentIndex(index)}
-                style={{ transition: "transform 0.3s ease" }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.transform = "scale(1.1)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
-                }}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={500}
-                  height={300}
-                  className="w-full h-full object-contain rounded-lg"
-                />
-              </div>
-            ))
-          )}
+              {Array.isArray(images) && images.length > 10 ? (
+                <>
+                  {images.slice(0, 10).map((image, index) => (
+                    <div
+                      key={index}
+                      className={`w-12 h-12 rounded-lg cursor-pointer border-2 ${
+                        index === currentIndex ? "border-lime-400" : "border-transparent"
+                      }`}
+                      onClick={() => setCurrentIndex(index)}
+                      style={{ transition: "transform 0.3s ease" }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLDivElement).style.transform = "scale(1.1)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
+                      }}
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={500}
+                        height={300}
+                        className="w-full h-full object-contain rounded-lg"
+                      />
+                    </div>
+                  ))}
+                  <div
+                    key="more"
+                    className="w-auto h-12 px4 rounded-lg cursor-pointer border-2 border-transparent flex items-center justify-center bg-gray-800 text-lime-400 font-bold text-sm hover:bg-gray-700 transition"
+                    onClick={() => window.location.href = "/gallery"}
+                  >
+                    See All
+                  </div>
+                </>
+              ) : (
+                Array.isArray(images) && images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`w-12 h-12 rounded-lg cursor-pointer border-2 ${
+                      index === currentIndex ? "border-lime-400" : "border-transparent"
+                    }`}
+                    onClick={() => setCurrentIndex(index)}
+                    style={{ transition: "transform 0.3s ease" }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLDivElement).style.transform = "scale(1.1)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLDivElement).style.transform = "scale(1)";
+                    }}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-contain rounded-lg"
+                    />
+                  </div>
+                ))
+              )}
         </div>
       </div>
 
