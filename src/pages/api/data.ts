@@ -19,7 +19,7 @@ type EducationType = {
 
 const typedData = data as unknown as EducationType;
 
-export const education = typedData.education.map((edu, index) => ({
+export const education: EducationItemType[] = typedData.education.map((edu, index) => ({
   ...edu,
   image: [education1, education2][index]
 }));
