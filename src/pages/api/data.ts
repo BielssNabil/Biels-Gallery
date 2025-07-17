@@ -28,27 +28,27 @@ export const education: EducationItemType[] = typedData.education.map((edu, inde
 export const archiveFiles = [
   {
     name: "LAPORAN KEGIATAN KUNJUNGAN LUBANG BUAYA & RUMAH SASMITA LOKA.pdf",
-    url: "/task/LAPORAN KEGIATAN KUNJUNGAN LUBANG BUAYA & RUMAH SASMITA LOKA.pdf"
+    url: "/Task/LAPORAN KEGIATAN KUNJUNGAN LUBANG BUAYA & RUMAH SASMITA LOKA.pdf"
   },
   {
     name: "MakalahKelompok1_NegaraKesatuan_Fiks.pdf",
-    url: "/task/MakalahKelompok1_NegaraKesatuan_Fiks.pdf"
+    url: "/Task/MakalahKelompok1_NegaraKesatuan_Fiks.pdf"
   },
   {
     name: "TEKNOLOGI PEMERINTAHAN & POLITIK PEMERINTAHAN.pdf",
-    url: "/task/TEKNOLOGI PEMERINTAHAN & POLITIK PEMERINTAHAN.pdf"
+    url: "/Task/TEKNOLOGI PEMERINTAHAN & POLITIK PEMERINTAHAN.pdf"
   },
   {
     name: "Pemerintahan Daerah.pdf",
-    url: "/task/Pemerintahan Daerah.pdf"
+    url: "/Task/Pemerintahan Daerah.pdf"
   },
   {
     name: "Kewenangan Pemerintah (2).pdf",
-    url: "/task/Kewenangan Pemerintah (2).pdf"
+    url: "/Task/Kewenangan Pemerintah (2).pdf"
   },
   {
     name: "TEKNOLOGI PEMERINTAHAN & POLITIK PEMERINTAHAN.pdf",
-    url: "/task/Demokrasi & Perkembangannya di indonesia (2).pdf"
+    url: "/Task/Demokrasi & Perkembangannya di indonesia (2).pdf"
   }
 ];
 
